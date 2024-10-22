@@ -3,4 +3,10 @@ startState <- generateState(net, specs=c("Rv3133c"= 0,"Rv3132c"=0, "Rv0081"=0, "
 stateTransition(net,startState)
 path <- getPathToAttractor(network=net, state=startState)
 plotSequence(sequence=path)
+# Code for inactivation mutation
+knockedOut <- fixGenes(net3, "Rv0081", 0)
+knockedOut
 # Code for activation mutation
+overExpressed <- fixGenes(net, "Rv3133c", 1)
+attr <- getAttractors(overExpressed)
+plotAttractors(attr)
