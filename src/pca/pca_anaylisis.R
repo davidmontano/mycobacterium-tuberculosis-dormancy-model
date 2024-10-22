@@ -1,0 +1,5 @@
+library(FactoMiner)
+estados_hipoxia    read.csv (file =’estados_hipoxia.csv’ , header= TRUE, sep=",", row.names=1)
+acp_estados_hipoxia <-  PCA (data, graph = FALSE)
+plot (  acp_estados_hipoxia, choix = "ind")
+plot (  acp_estados_hipoxia, choix = "var")
