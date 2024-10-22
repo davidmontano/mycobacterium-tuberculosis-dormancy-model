@@ -1,0 +1,20 @@
+targets, factors
+Rv3133c , Rv3132c | (Rv0757 & Rv2034) | (Rv3133c & (Rv3132c | (Rv0757 & Rv2034)))
+Rv3132c , Rv3133c | Rv2034
+Rv0081  , (!(Rv3574) | Rv3133c)) & (!Rv0081)
+Rv0474  , Rv0081 | Rv0474 & (!Rv1985c)
+Rv0757  , (Rv3681c |Rv0081 |Rv0757|Rv3597c) & (! Rv2011c)
+Rv1990c ,(Rv3597c | Rv0081 | Rv1990c)  & ! (Rv3574)
+Rv0967  , Rv3133c |  Rv2034
+Rv1994c , (Rv0081 | Rv1994c) & (!Rv0324)
+Rv2021c , Rv0081|Rv3597c|Rv3133c
+Rv3597c , (Rv3574 |Rv2034 | Rv1994c |Rv3597c|Rv0474) & (!( Rv0324))
+Rv3681c , Rv3597c | (Rv0081& !Rv2011c)
+Rv2324  , Rv3597c | Rv0081
+Rv0324  , (Rv0324|(!Rv3597c & Rv1985c)) & (! Rv0081)
+Rv0494, (Rv0494 ) & (! Rv0081)
+Rv0653c  , Rv0653c & !(Rv3597c|Rv0081 )
+Rv1985c , Rv0324 |Rv0081 | (Rv1985c) & (! (Rv1994c| Rv3133c|Rv3597c))
+Rv2034  , Rv0081 | Rv2034 | Rv0967
+Rv2011c , (Rv2011c | Rv0324)
+Rv3574  , (Rv3574 | Rv0324) & (!(Rv0081| Rv3597c))
